@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON" "${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoiding" "${PODS_CONFIGURATION_BUILD_DIR}/ZVActivityIndicatorView" "${PODS_CONFIGURATION_BUILD_DIR}/ZVProgressHUD"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/SBPickerSelector" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON" "${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoiding" "${PODS_CONFIGURATION_BUILD_DIR}/ZVActivityIndicatorView" "${PODS_CONFIGURATION_BUILD_DIR}/ZVProgressHUD"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ZVProgressHUD/ZVProgressHUD.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "SwiftyJSON" -framework "TPKeyboardAvoiding" -framework "ZVActivityIndicatorView" -framework "ZVProgressHUD"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SBPickerSelector/SBPickerSelector.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ZVProgressHUD/ZVProgressHUD.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "SBPickerSelector" -framework "SwiftyJSON" -framework "TPKeyboardAvoiding" -framework "ZVActivityIndicatorView" -framework "ZVProgressHUD"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

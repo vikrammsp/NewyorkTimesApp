@@ -10,7 +10,7 @@ import SwiftyJSON
 class BaseViewController: UIViewController
 {
     var objHeaderView = HeaderView()
-// Vikram Commit
+
    static let shared: BaseViewController = BaseViewController()
 
     @IBOutlet weak var layoutConstraint_HeaderViewTopSpace: NSLayoutConstraint!

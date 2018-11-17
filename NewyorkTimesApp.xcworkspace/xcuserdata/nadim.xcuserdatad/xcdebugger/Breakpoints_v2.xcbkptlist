@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
-            timestampString = "564146016.357406"
+            timestampString = "564149387.8904051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
-            timestampString = "564146016.357541"
+            timestampString = "564149387.891291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
-            timestampString = "564146016.357635"
+            timestampString = "564149387.891889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
-            timestampString = "564146016.3577189"
+            timestampString = "564149387.892454"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getNWTimesData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
+            timestampString = "564149387.893006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -90,27 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
-            timestampString = "564146016.357798"
+            timestampString = "564149387.89355"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "getNWTimesData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewyorkTimesApp/Classes/Controllers/ViewController.swift"
-            timestampString = "564146016.357875"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "getNWTimesData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -145,6 +145,70 @@
             endingLineNumber = "55"
             landmarkName = "setCustomValues()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewyorkTimesApp/Classes/Model/ServerRequest.swift"
+            timestampString = "564149387.8942699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "sendServerRequest_GET(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewyorkTimesApp/Classes/Model/ServerRequest.swift"
+            timestampString = "564149387.894433"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "sendServerRequest_GET(_:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NewyorkTimesApp.ServerRequest.sendServerRequest_GET(__ObjC.NSMutableDictionary, completion: (Alamofire.DataResponse&lt;Any&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "NewyorkTimesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nadim/Desktop/test/NWTimes/NewyorkTimesApp/NewyorkTimesApp/Classes/Model/ServerRequest.swift"
+                  timestampString = "564149042.885231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1362">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in static NewyorkTimesApp.ServerRequest.sendServerRequest_GET(__ObjC.NSMutableDictionary, completion: (Alamofire.DataResponse&lt;Any&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "NewyorkTimesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nadim/Desktop/test/NWTimes/NewyorkTimesApp/NewyorkTimesApp/Classes/Model/ServerRequest.swift"
+                  timestampString = "564149042.890303"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "58">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

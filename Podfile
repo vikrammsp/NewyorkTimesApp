@@ -4,5 +4,6 @@ target 'NewyorkTimesApp' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'TPKeyboardAvoiding'
+    pod 'SBPickerSelector'
     use_frameworks!
 end

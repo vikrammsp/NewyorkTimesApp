@@ -7,12 +7,13 @@
 import UIKit
 import ZVProgressHUD
 import SwiftyJSON
+import SBPickerSelector
 
-
-class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,SBPickerSelectorDelegate {
 
     @IBOutlet weak var tableViewTimes: UITableView!
-    var strSelectedPeriod = "7"
+    var strSelectedPeriod = "1"
+    var arrPeriod = ["1","7", "30"]
     
     var arrNewsTimes : NSMutableArray = NSMutableArray()
     
@@ -22,8 +23,9 @@ class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.arrNewsTimes = NSMutableArray()
+        self.arrNewsTimes = NSMutableArray()
         self.getNWTimesData()
+        self.setCustomValues()
     }
     
     //---------------------------------------------------------------------------------------------
@@ -32,12 +34,14 @@ class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSour
     
     func getNWTimesData()
     {
+        self.arrNewsTimes.removeAllObjects()
         ZVProgressHUD.show()
         let dictParams = ["period":strSelectedPeriod] as NSMutableDictionary
         ServerRequest.sendServerRequest_GET(dictParams ) { (response, isSuccess) in
             if isSuccess == true
             {
                 ZVProgressHUD.dismiss()
+                
                 let dictRes = JSON(response.result.value ?? "")
                 let arrRes =  dictRes["results"].array
                 for dict in arrRes!
@@ -81,10 +85,33 @@ class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSour
                 }
                 self.tableViewTimes.reloadData()
                 print(self.arrNewsTimes.count)
-                
-
+                if self.arrNewsTimes.count == 0{
+                    self.displayAlertWithOk(message: "No articles found.\n Please change your period to fetch different articles.")
+                    return
+                }
             }
         }
+    }
+    
+    //---------------------------------------------------------------------------------------------
+    
+    func setCustomValues(){
+        objHeaderView.buttonDots.addTarget(self, action: #selector(buttonDotsClicked), for: .touchUpInside)
+    }
+    
+    //---------------------------------------------------------------------------------------------
+    // MARK: Custom Action Methods
+    //---------------------------------------------------------------------------------------------
+    
+    @IBAction func buttonDotsClicked(_ sender: Any) {
+        let picker: SBPickerSelector = SBPickerSelector()
+        picker.pickerData =  arrPeriod
+        picker.tag = 1
+        picker.delegate = self
+        picker.pickerType = .text
+        picker.doneButtonTitle = "Done"
+        picker.cancelButtonTitle = "Cancel"
+        picker.showPicker(from: self.view, in: self)
     }
     
     //---------------------------------------------------------------------------------------------
@@ -150,6 +177,23 @@ class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSour
         self.navigationController?.pushViewController(objDetailsViewController, animated: true)
     }
     
+    // ------------------------------------------------------------------------------------------------------------------
+    // MARK: - SBPickerSelector Delegate Methods
+    // ------------------------------------------------------------------------------------------------------------------
+    
+    func pickerSelector(_ selector: SBPickerSelector, selectedValues values: [String], atIndexes idxs: [NSNumber])
+    {
+        let m = idxs[0] as! Int // m is an `Int64`
+        strSelectedPeriod =  (selector.pickerData[m] as? String)!
+        self.getNWTimesData()
+    }
+    
+    // ------------------------------------------------------------------------------------------------------------------
+    
+    func pickerSelector(_ selector: SBPickerSelector, cancelPicker cancel: Bool)
+    {
+        selector.dismiss(animated: true, completion: nil)
+    }
     //---------------------------------------------------------------------------------------------
     
     

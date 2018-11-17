@@ -18,7 +18,7 @@ class ServerRequest: NSObject {
     {
         let strPeriod = dictData ["period"] as! String
        
-        let strOtherURL = String(format: "%@.%@", strPeriod,KConstant.kServerPartURL)
+        let strOtherURL = String(format: "%@%@", strPeriod,KConstant.kServerPartURL)
         let strURL = KConstant.kServerURL + strOtherURL
         let manager = Alamofire.SessionManager.default
         

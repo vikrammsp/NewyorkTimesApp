@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "980E312F01BF93684A4AFD386E418006"
-               BlueprintName = "ZVProgressHUD"
+               BlueprintIdentifier = "BEF81E381DAD7AEA93F4CC59829A4BB2"
+               BlueprintName = "SBPickerSelector"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "ZVProgressHUD.framework">
+               BuildableName = "SBPickerSelector.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
