@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.3)
+  - SwiftyJSON (4.1.0)
+  - TPKeyboardAvoiding (1.3.2)
+  - ZVActivityIndicatorView (0.1.2)
+  - ZVProgressHUD (2.0.0):
+    - ZVActivityIndicatorView
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftyJSON
+  - TPKeyboardAvoiding
+  - ZVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SwiftyJSON
+    - TPKeyboardAvoiding
+    - ZVActivityIndicatorView
+    - ZVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+  ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
+  ZVProgressHUD: b90892e51d56fb6dd03f8147f158594450ce354c
+
+PODFILE CHECKSUM: a7734046fe8d42a2c7e158e02218df72155b061c
+
+COCOAPODS: 1.5.3
