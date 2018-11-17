@@ -10,7 +10,7 @@ import SwiftyJSON
 import SBPickerSelector
 
 class ViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,SBPickerSelectorDelegate {
-
+//Commit
     @IBOutlet weak var tableViewTimes: UITableView!
     var strSelectedPeriod = "1"
     var arrPeriod = ["1","7", "30"]
